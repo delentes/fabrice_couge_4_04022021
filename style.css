@@ -16,6 +16,7 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    color: white !important;
 }
 
 #page-loading-blocs-notifaction {
@@ -134,6 +135,9 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, 1);
+}
+.d-bloc a .icon-md:hover{
+    color: black !important;
 }
 
 .d-bloc .a-btn:hover,
@@ -326,6 +330,7 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    right: 30px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -334,7 +339,9 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: #9a5b2f;
+    border-radius: 2em;
+    color: white !important;
 }
 
 .navbar-toggle {
