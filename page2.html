@@ -81,28 +81,28 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" >
-					<div class="form-group" data-validator-required-message to override="cet élément doit être renseigner">
+					<div class="form-group">
 						<label>
 							Nom
 						</label>
-						<input id="name" class="form-control" required data-validator-required-message to override="cet élément doit être renseigner" />
+						<input id="name" class="form-control" required data-validation-required-message="cet élément doit être renseigner"/>
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required data-validator-validemail-message to override="adresse email incorrecte" />
+						<input id="email" class="form-control" type="email" required data-validation-required-message="cet élément doit être renseigner" data-validation-validemail-message="adresse email incorrecte"/>
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="text" required id="input_504"/>
+						<input class="form-control" type="text" required data-validation-required-message="cet élément doit être renseigner" id="input_504"/>
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="message" class="form-control" rows="4" cols="50" required data-validation-required-message="cet élément doit être renseigner"></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" >
 						Envoyer
